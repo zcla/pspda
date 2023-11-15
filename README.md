@@ -1,2 +1,1 @@
-# pspda
-Paróquia São Pedro de Alcântara
+# Paróquia São Pedro de Alcântara - Brasília, DF

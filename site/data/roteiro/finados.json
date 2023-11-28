@@ -1,0 +1,37 @@
+{
+	"nome": "Finados (cemitério)",
+	"nota": "Baseado na experiência de 02/11/2023, que foi celebrada às 09h30 pelo Pe. Ricardo. Serviram Adriana, José Cláudio, Liliana e Marise.",
+	"passos": [
+		{
+			"tipo": "titulo",
+			"nivel": 1,
+			"texto": "Preparação"
+		},
+		{
+			"tipo": "lista",
+			"itens": [
+				"Foram escalados 4 Mesce para a missa. O número foi suficiente pois, além de dois Mesce da Catedral que também ajudaram, havia padres, diáconos e seminaristas que ajudaram na distribuição da Eucaristia. Porém, na reunião paroquial de 13/12/2023, o Pe. Ricardo pediu que da próxima vez fossem ao menos 6 Mesce da paróquia.",
+				"Levar um sanguíneo para cada Mesce, para o caso de algum incidente durante a distribuição da Eucaristia.",
+				"Levar uma toalha para o Pe. Ricardo enxugar o suor.",
+				"Chegar com antecedência de mais de 30 minutos, pois o trânsito é intenso, e não há vagas disponíveis perto do cemitério."
+			]
+		},
+		{
+			"tipo": "titulo",
+			"nivel": 1,
+			"texto": "Serviço"
+		},
+		{
+			"tipo": "lista",
+			"itens": [
+				"Ficar próximo ao local da missa com a veste aguardando o contato de alguém da organização. Caso se aproxime o horário da missa e ninguém procure, buscar alguém da organização para conseguir orientações.",
+				"Aguardar o início da missa no local designado (em 2023 foi a capela 07).",
+				"Os Mesce participam da procissão de entrada, e ao chegar na frente do altar fazem a reverência e viram à esquerda, onde há cadeiras reservadas.",
+				"Na hora da distribuição da Eucaristia, subir no presbitério para receber a Comunhão e a âmbula para distribuição. Não houve divisão prévia das áreas a serem cobertas. Cada Mesce deve procurar o local mais vazio para distribuir a Eucaristia.",
+				"Ao terminar de distribuir a Eucaristia, subir no presbitério e entregar a âmbula ao padre, que fará a purificação. Ficar atento para levar a âmbula ao local de preparação, quando solicitado.",
+				"Não é necessário fazer a purificação das âmbulas; havia um padre no local de preparação com essa incumbência.",
+				"Caso haja disponibilidade, verificar com a equipe da próxima missa se há Mesces suficientes ou se há necessidade de ajuda."
+			]
+		}
+	]
+}

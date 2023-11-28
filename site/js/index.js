@@ -3,7 +3,6 @@ function mostraRoteiro(roteiro) {
 	$(selector).empty();
 	$(selector).append('<div class="spinner-border">');
 	$.getJSON(`data/roteiro/${roteiro}.json`, function(data) {
-		console.log(data);
 		$(selector).empty();
 		$(selector).append(`
 			<h1>${data.nome}</h1>

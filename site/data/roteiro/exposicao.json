@@ -1,0 +1,53 @@
+{
+	"nome": "Exposição do Santíssimo Sacramento",
+	"nota": "Atualizado em 28/11/2023.",
+	"passos": [
+		{
+			"tipo": "titulo",
+			"nivel": 1,
+			"texto": "Introdução"
+		},
+		{
+			"tipo": "lista",
+			"itens": [
+				{
+					"tipo": "paragrafo",
+					"texto": [
+						"Este roteiro foi elaborado tendo por base as páginas 55 a 60 (números 79 a 96) do livro ",
+						{
+							"tipo": "italico",
+							"texto": "Sagrada Comunhão e o Culto do Mistério Eucarístico fora da Missa"
+						},
+						", que é o principal ",
+						{
+							"tipo": "negrito",
+							"texto": "documento que se deve procurar em caso de dúvida"
+						},
+						", e que está disponível para consulta no armário de livros litúrgicos da paróquia."
+					]
+				}
+			]
+		},
+		{
+			"tipo": "titulo",
+			"nivel": 1,
+			"texto": "Orientações gerais"
+		},
+		{
+			"tipo": "lista",
+			"itens": [
+				{
+					"tipo": "paragrafo",
+					"texto": [
+						"Sempre que possível a exposição, trasladação e recolhimento do Santíssimo Sacramento deve ser feita por um sacerdote ou diácono; ao Mesce só é permitido realizar esses procedimentos ",
+						{
+							"tipo": "negrito",
+							"texto": "na falta de um ministro ordinário, e com a autorização expressa do pároco"
+						},
+						"."
+					]
+				}
+			]
+		}
+	]
+}

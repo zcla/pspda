@@ -15,31 +15,58 @@ function mostraRoteiro(roteiro) {
 			`);
 		}
 		for (const passo of data.passos) {
-			mostraPasso(selector, passo);
+			$(selector).append(`
+				<div>${mostraPasso(selector, passo)}</div>
+			`);
 		}
 	});
 }
 
 function mostraPasso(selector, passo) {
 	let html = '???';
-	switch (passo.tipo) {
-		case 'lista':
-			html = '<ul>';
-			for (const item of passo.itens) {
-				html += `<li>${item}</li>`;
-			}
-			html += '</ul>';
+	switch (typeof passo) {
+		case 'string':
+			html = `<span class="texto">${passo}</span>`;
 			break;
-		case 'titulo':
-			html = `<h${passo.nivel + 1}>${passo.texto}</h${passo.nivel + 1}>`;
+		case 'object':
+			switch (passo.tipo) {
+				case 'italico':
+					html = `<span class="italico">${mostraPasso(selector, passo.texto)}</span>`;
+					break;
+				case 'lista':
+					html = '<ul class="lista">';
+					for (const item of passo.itens) {
+						html += `<li>${mostraPasso(selector, item)}</li>`;
+					}
+					html += '</ul>';
+					break;
+				case 'negrito':
+					html = `<span class="negrito">${mostraPasso(selector, passo.texto)}</span>`;
+					break;
+				case 'paragrafo':
+					html = '<p class="paragrafo">';
+					for (const item of passo.texto) {
+						html += `${mostraPasso(selector, item)}`;
+					}
+					html += '</p>';
+					break;
+				case 'titulo':
+					html = `<h${passo.nivel + 1} class="titulo${passo.nivel + 1}">${passo.texto}</h${passo.nivel + 1}>`;
+					break;
+				default:
+					debugger;
+					html = `<span class="erro">${passo}</span>`;
+					console.log(`mostraPasso(): Tipo "${passo.tipo}" desconhecido.`)
+					break;
+			}
 			break;
 		default:
-			console.log(`mostraPasso(): Tipo "${passo.tipo}" desconhecido.`)
+			debugger;
+			html = `<span class="erro">${passo}</span>`;
+			console.log(`mostraPasso(): Tipo de objeto "${typeof passo}" desconhecido.`)
 			break;
 	}
-	$(selector).append(`
-		<div>${html}</div>
-	`);
+	return html;
 }
 
 window.onload = function() {

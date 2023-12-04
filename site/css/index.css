@@ -6,3 +6,15 @@ a {
 #header a {
 	color: #fff;
 }
+
+span.erro {
+	color: #f00;
+}
+
+span.italico {
+	font-style: italic;
+}
+
+span.negrito {
+	font-weight: bold;
+}

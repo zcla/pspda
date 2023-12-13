@@ -46,6 +46,41 @@
 						},
 						"."
 					]
+				},
+				{
+					"tipo": "paragrafo",
+					"texto": [
+						{
+							"tipo": "negrito",
+							"texto": "Em hipótese alguma"
+						},
+						" é permitido fazer procissões com o Santíssimo Sacramento. Em caso de necessidade de trasladação do ostensório com o Santíssimo, deve-se ",
+						{
+							"tipo": "negrito",
+							"texto": "sempre"
+						},
+						" retirar o Santíssimo do ostensório, colocando-o na teca, e após a trasladação colocá-lo novamente no ostensório. Também é ",
+						{
+							"tipo": "negrito",
+							"texto": "proibido"
+						},
+						" ao Mesce dar a bênção com o Santíssimo.",
+						{
+							"tipo": "notaDeRodape",
+							"texto": "Sagrada Comunhão e o Culto do Mistério Eucarístico fora da Missa, n. 91."
+						},
+						" O Mesce deve trajar o uniforme e sua veste de serviço durante as atividades.",
+						{
+							"tipo": "notaDeRodape",
+							"texto": [
+								{
+									"tipo": "italico",
+									"texto": "Ibid."
+								},
+								", n. 92."
+							]
+						}
+					]
 				}
 			]
 		}

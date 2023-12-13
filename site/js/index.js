@@ -14,56 +14,56 @@ function mostraRoteiro(roteiro) {
 				</div>
 			`);
 		}
-		for (const passo of data.passos) {
+		for (const parte of data.conteudo) {
 			$(selector).append(`
-				<div>${mostraPasso(selector, passo)}</div>
+				<div>${mostraParte(selector, parte)}</div>
 			`);
 		}
 	});
 }
 
-function mostraPasso(selector, passo) {
+function mostraParte(selector, parte) {
 	let html = '???';
-	switch (typeof passo) {
+	switch (typeof parte) {
 		case 'string':
-			html = `<span class="texto">${passo}</span>`;
+			html = `<span class="texto">${parte}</span>`;
 			break;
 		case 'object':
-			switch (passo.tipo) {
+			switch (parte.tipo) {
 				case 'italico':
-					html = `<span class="italico">${mostraPasso(selector, passo.texto)}</span>`;
+					html = `<span class="italico">${mostraParte(selector, parte.texto)}</span>`;
 					break;
 				case 'lista':
 					html = '<ul class="lista">';
-					for (const item of passo.itens) {
-						html += `<li>${mostraPasso(selector, item)}</li>`;
+					for (const item of parte.itens) {
+						html += `<li>${mostraParte(selector, item)}</li>`;
 					}
 					html += '</ul>';
 					break;
 				case 'negrito':
-					html = `<span class="negrito">${mostraPasso(selector, passo.texto)}</span>`;
+					html = `<span class="negrito">${mostraParte(selector, parte.texto)}</span>`;
 					break;
 				case 'paragrafo':
 					html = '<p class="paragrafo">';
-					for (const item of passo.texto) {
-						html += `${mostraPasso(selector, item)}`;
+					for (const item of parte.texto) {
+						html += `${mostraParte(selector, item)}`;
 					}
 					html += '</p>';
 					break;
 				case 'titulo':
-					html = `<h${passo.nivel + 1} class="titulo${passo.nivel + 1}">${passo.texto}</h${passo.nivel + 1}>`;
+					html = `<h${parte.nivel + 1} class="titulo${parte.nivel + 1}">${parte.texto}</h${parte.nivel + 1}>`;
 					break;
 				default:
 					debugger;
-					html = `<span class="erro">${passo}</span>`;
-					console.log(`mostraPasso(): Tipo "${passo.tipo}" desconhecido.`)
+					html = `<span class="erro">${parte}</span>`;
+					console.log(`mostraParte(): Tipo "${parte.tipo}" desconhecido.`)
 					break;
 			}
 			break;
 		default:
 			debugger;
-			html = `<span class="erro">${passo}</span>`;
-			console.log(`mostraPasso(): Tipo de objeto "${typeof passo}" desconhecido.`)
+			html = `<span class="erro">${parte}</span>`;
+			console.log(`mostraParte(): Tipo de objeto "${typeof parte}" desconhecido.`)
 			break;
 	}
 	return html;
